@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client_ftp.controller.Controller">
+   <children>
+      <TextArea fx:id="area" layoutX="8.0" layoutY="46.0" prefHeight="344.0" prefWidth="398.0" />
+      <TextField fx:id="path" layoutX="8.0" layoutY="14.0" prefHeight="25.0" prefWidth="398.0" />
+      <TextField fx:id="command" layoutX="413.0" layoutY="327.0" prefHeight="25.0" prefWidth="179.0" />
+      <Label layoutX="413.0" layoutY="310.0" prefHeight="17.0" prefWidth="179.0" text="Commandes :" />
+      <Button fx:id="button" layoutX="413.0" layoutY="361.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="179.0" text="Valider" />
+      <Button fx:id="login" layoutX="413.0" layoutY="14.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="179.0" text="Connexion" />
+      <ComboBox fx:id="combo" layoutX="413.0" layoutY="77.0" prefHeight="25.0" prefWidth="179.0" />
+      <Label layoutX="413.0" layoutY="60.0" prefHeight="17.0" prefWidth="179.0" text="Thème :" />
+   </children>
+</AnchorPane>

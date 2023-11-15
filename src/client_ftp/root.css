@@ -1,0 +1,16 @@
+.black {
+    -fx-background-color: #161616;
+    -fx-text-fill: white;
+}
+
+.black .content {
+    -fx-background-color: #161616;
+}
+
+.black-back {
+    -fx-background-color: black;
+}
+
+.default-back {
+    -fx-background-color: #fdfdfe;
+}

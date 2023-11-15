@@ -1,0 +1,7 @@
+
+a faire :
+    - toLowerCase()
+
+pwd : variable initialisé à chaque connexion
+plusieurs clients : compteur
+

@@ -1,0 +1,31 @@
+#include <Servo.h>
+#include "SR04.h"
+#define TRIG_PIN 12
+#define ECHO_PIN 11
+
+Servo myservo;
+SR04 sr04 = SR04(ECHO_PIN,TRIG_PIN);
+long a;
+
+void setup() {
+  Serial.begin(9600);
+  delay(1000);
+  myservo.attach(9);
+  myservo.write(90);
+}
+
+void loop() {
+  a=sr04.Distance(); //distance en cm
+
+  if(a < 20){
+      myservo.write(150);// move servos to center position -> 90°
+      delay(800);
+      myservo.write(30);// move servos to center position -> 60°
+      delay(800);
+      myservo.write(150);// move servos to center position -> 90°
+      delay(800);
+      myservo.write(30);// move servos to center position -> 60°
+      delay(800);
+  }
+
+}
